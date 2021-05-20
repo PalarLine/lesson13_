@@ -1,0 +1,311 @@
+
+
+
+.grid {
+    display: grid;
+}
+
+
+header {
+    width: 100%;  
+}
+
+.main {
+    width: 100%;
+}
+
+footer {
+    width: 100%;
+} 
+
+
+h1 {
+    font-size: 34pt;
+    text-align: center;
+}
+ 
+.nav {
+    font-size: 16pt;
+}
+
+p {
+    font-size: 14pt;
+}
+
+.bunner > img {
+    width: 100%;
+    
+}
+
+
+div > .categories {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 15px;
+    padding: 0;  
+}
+
+
+.overlay {
+    position: absolute;
+    box-sizing: content-box;
+    background-color: rgba(5, 66, 134, 0.3);
+    width: 100%;
+    height: 100%; 
+    align-content: end;  
+}
+
+
+.shoes {
+    align-items: end;
+    background-image: url(/assets/img/shoes.jpg);
+    position: relative;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-color:rgba(5, 66, 134); 
+    height: 120px;
+    transition: 1s;
+}
+
+.watches {
+    align-items: end;
+    position: relative;
+    background-image: url(/assets/img/watch4.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-color:rgba(5, 66, 134);
+    height: 120px;
+    transition: 1s;
+}
+
+.bags {
+    align-items: end;
+    position: relative;
+    background-image: url(/assets/img/bag3.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-color:rgba(5, 66, 134);
+    height: 120px;
+    transition: 1s;
+}
+
+div >.items {
+    padding-bottom: 15px;
+    margin-bottom: 20px;
+    margin-top: 20px;
+    border: 0;
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-content: center;
+    gap: 15px;
+} 
+
+.card {
+    border: 0;
+}
+.contacts {
+    grid-template-columns: 1fr;
+    justify-items: center;    
+}
+
+
+.contacts > .phone > p {
+    padding: 0px;
+    text-align: justify;
+}
+
+.service {
+   grid-template-columns: repeat(2, 1fr); 
+   /* grid-template-rows: repeat(5, 50px); */
+} 
+
+
+.shoes:hover {
+    transform: scale(1.05);  
+    
+}
+
+.watches:hover {
+    transform: scale(1.05);
+
+}
+
+.bags:hover {
+    transform: scale(1.05);
+    
+}
+.nav-link {
+    color: grey;
+
+}
+ .nav-link:hover {
+     color: black;
+     transform: scale(1.05) ;
+ }
+
+ .nav-item {
+    color: rgb(110, 117, 110);
+} 
+
+.nav-item:hover {
+    color: rgb(236, 233, 233);
+    transform: scale(1.03) ;
+}
+
+.white {
+    color: ivory;
+}
+
+.white:hover {
+    color: white;
+    text-decoration: underline;
+}
+
+  
+
+ @media (min-width:768px) {
+
+header {
+    width: 70%;  
+}
+
+.main {
+    width: 70%;
+}
+
+footer {
+    width: 70%;
+}
+
+div > .categories {
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 15px;
+    padding: 0;  
+}
+
+
+/* .overlay {
+    position: absolute;
+    box-sizing: content-box;
+    background-color: rgba(5, 66, 134, 0.3);
+    width: 100%;
+    height: 100%; 
+    align-content: end;  
+}
+
+
+.shoes {
+    align-items: end;
+    background-image: url(/assets/img/shoes.jpg);
+    position: relative;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-color:rgba(5, 66, 134); 
+    height: 120px;
+    transition: 1s;
+}
+
+.watches {
+    align-items: end;
+    position: relative;
+    background-image: url(/assets/img/watch4.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-color:rgba(5, 66, 134);
+    height: 120px;
+    transition: 1s;
+}
+
+.bags {
+    align-items: end;
+    position: relative;
+    background-image: url(/assets/img/bag3.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-color:rgba(5, 66, 134);
+    height: 120px;
+    transition: 1s;
+} */
+
+div > .items {
+    padding-bottom: 15px;
+    margin-bottom: 20px;
+    margin-top: 20px;
+    border: 0;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(20%, 1fr));
+    justify-content: center;
+    grid-template-rows: 2;
+    gap: 15px;
+} 
+
+/* .card {
+    border: 0;
+} */
+
+/* .shoes:hover {
+    transform: scale(1.05);  
+    
+}
+
+.watches:hover {
+    transform: scale(1.05);
+
+}
+
+.bags:hover {
+    transform: scale(1.05);
+    
+} */
+/* .nav-link {
+    color: grey;
+
+}
+ .nav-link:hover {
+     color: black;
+     transform: scale(1.05) ;
+ }
+
+ .nav-item {
+    color: rgb(110, 117, 110);
+} 
+
+.nav-item:hover {
+    color: rgb(236, 233, 233);
+    transform: scale(1.03) ;
+}
+
+.white {
+    color: ivory;
+}
+
+.white:hover {
+    color: white;
+    text-decoration: underline;
+} */
+
+
+.contacts {
+     grid-template-columns: 1fr 2fr 1fr;
+     justify-items: center;
+     align-items: center;    
+ }
+
+ 
+.contacts > .phone > p {
+     text-align: center
+ }
+ 
+.service {
+    grid-template-columns: repeat(4, 1fr); 
+    grid-template-rows: repeat(5, 50px);
+ }
+ }
+     
+    
